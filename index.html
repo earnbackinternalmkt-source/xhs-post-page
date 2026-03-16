@@ -76,20 +76,11 @@ margin-top:10px;
 
 <script>
 
-function copyText(){
+window.onload=function(){
+
 var copyText=document.getElementById("caption");
 copyText.select();
 document.execCommand("copy");
-alert("文案已复制");
-}
-
-function openXHS(){
-
-window.location.href="xhsdiscover://camera";
-
-setTimeout(function(){
-window.location.href="https://www.xiaohongshu.com/explore";
-},1500);
 
 }
 
