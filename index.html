@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>XHS Share</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+background:#fafafa;
+text-align:center;
+padding:30px;
+}
+
+img{
+width:90%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+textarea{
+width:90%;
+padding:10px;
+border-radius:10px;
+}
+
+button{
+background:#ff2442;
+color:white;
+border:none;
+padding:15px 25px;
+font-size:18px;
+border-radius:10px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>发小红书拿奖励 🎁</h2>
+
+<img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+
+<p>Step 1: Copy caption</p>
+
+<textarea id="caption" rows="6">
+
+📍Your Restaurant Name
+
+环境很好，推荐大家！
+
+推荐：
+🍹 Cocktail
+🥩 Steak
+
+#klfood #探店 #美食推荐
+
+</textarea>
+
+<br>
+
+<button onclick="copyText()">复制文案</button>
+
+<br><br>
+
+<p>Step 2: Open Xiaohongshu</p>
+
+<a href="https://www.xiaohongshu.com/explore">
+<button>打开小红书</button>
+</a>
+
+<script>
+
+function copyText(){
+var copyText=document.getElementById("caption");
+copyText.select();
+document.execCommand("copy");
+alert("文案已复制");
+}
+
+</script>
+
+</body>
+
+</html>
