@@ -72,9 +72,7 @@ margin-top:10px;
 
 <p>Step 2: Open Xiaohongshu</p>
 
-<a href="https://www.xiaohongshu.com/explore">
-<button>打开小红书</button>
-</a>
+<button onclick="openXHS()">打开小红书发布</button>
 
 <script>
 
@@ -83,6 +81,16 @@ var copyText=document.getElementById("caption");
 copyText.select();
 document.execCommand("copy");
 alert("文案已复制");
+}
+
+function openXHS(){
+
+window.location.href="xhsdiscover://camera";
+
+setTimeout(function(){
+window.location.href="https://www.xiaohongshu.com/explore";
+},1500);
+
 }
 
 </script>
